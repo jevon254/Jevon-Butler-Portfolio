@@ -825,6 +825,29 @@ nav {
   transform: none;
   box-shadow: none;
 }
+.contact-body-simple {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 3rem 2rem 5rem;
+}
+.linkedin-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+  background: var(--navy);
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.85rem 1.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  transition: background 0.2s, transform 0.15s;
+}
+.linkedin-btn:hover { background: #1E2F45; transform: translateY(-1px); text-decoration: none; }
+.linkedin-icon { font-size: 1rem; }
 .contact-form-card {
   background: var(--white);
   border: 1px solid var(--border);
@@ -1703,37 +1726,12 @@ footer {
     <p>Whether you're exploring a role, a collaboration, or just want to talk about IT operations and project delivery — I'd love to hear from you.</p>
   </div>
 
-  <div class="contact-body">
-    <div class="contact-info">
-      <h2>Get in touch</h2>
-      <p>I'm currently open to IT Operations Manager, IT Project Manager, and Product Owner / Product Manager opportunities. Based in Colorado Springs, CO — available for remote and hybrid roles.</p>
+  <div class="contact-body-simple">
 
-      <div class="contact-link-card contact-link-static">
-        <div class="contact-link-icon clay">✉️</div>
-        <div class="contact-link-text">
-          <div class="label">Email</div>
-          <div class="value">jevon254&#64;gmail&#46;com</div>
-        </div>
-      </div>
-
-      <div class="contact-link-card contact-link-static">
-        <div class="contact-link-icon navy">📞</div>
-        <div class="contact-link-text">
-          <div class="label">Phone</div>
-          <div class="value">(254) 462-2939</div>
-        </div>
-      </div>
-
-      <a href="https://www.linkedin.com/in/jevon-butler-2a9544128" target="_blank" rel="noopener" class="contact-link-card">
-        <div class="contact-link-icon navy">💼</div>
-        <div class="contact-link-text">
-          <div class="label">LinkedIn</div>
-          <div class="value">Connect with me on LinkedIn →</div>
-        </div>
-      </a>
-
-      <p style="font-size:0.8rem; color:var(--muted-light); margin-top:1rem;">Colorado Springs, CO · Available for remote &amp; hybrid roles</p>
-    </div>
+    <a href="https://www.linkedin.com/in/jevon-butler-2a9544128" target="_blank" rel="noopener" class="linkedin-btn">
+      <span class="linkedin-icon">💼</span>
+      Connect with me on LinkedIn
+    </a>
 
     <div class="contact-form-card">
       <h2>Send a message</h2>
@@ -1770,6 +1768,7 @@ footer {
         <p class="form-note">I typically respond within one business day.</p>
       </form>
     </div>
+
   </div>
 
 </div>
