@@ -817,37 +817,6 @@ nav {
 .contact-link-text .label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted-light); font-weight: 600; }
 .contact-link-text .value { font-size: 0.9rem; font-weight: 500; color: var(--text); margin-top: 0.1rem; }
 
-.contact-link-static {
-  cursor: default;
-  pointer-events: none;
-}
-.contact-link-static:hover {
-  transform: none;
-  box-shadow: none;
-}
-.contact-body-simple {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 3rem 2rem 5rem;
-}
-.linkedin-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.6rem;
-  width: 100%;
-  background: var(--navy);
-  color: white;
-  font-size: 0.95rem;
-  font-weight: 600;
-  padding: 0.85rem 1.5rem;
-  border-radius: 2rem;
-  text-decoration: none;
-  margin-bottom: 1.5rem;
-  transition: background 0.2s, transform 0.15s;
-}
-.linkedin-btn:hover { background: #1E2F45; transform: translateY(-1px); text-decoration: none; }
-.linkedin-icon { font-size: 1rem; }
 .contact-form-card {
   background: var(--white);
   border: 1px solid var(--border);
@@ -1474,7 +1443,7 @@ footer {
         <div class="project-card-body">
           <div class="project-card-type">CRM &amp; Data · Platform Implementation</div>
           <div class="project-card-title">Salesforce Nonprofit Cloud Implementation at TRAILS</div>
-          <p class="project-card-desc">Migrated 41,354 records from a fragmented Airtable system to Salesforce — establishing a unified system of record for a national network of 12,000+ schools and 30,000+ mental health professionals.</p>
+          <p class="project-card-desc">Built Salesforce as the operational backbone of TRAILS' national training program — migrating 41,354 records and integrating directly with the TRAILS website to verify training credentials and control content access for mental health professionals across 12,000+ schools.</p>
           <div class="project-card-tags">
             <span class="project-card-tag">Salesforce</span>
             <span class="project-card-tag">ETL Migration</span>
@@ -1581,7 +1550,7 @@ footer {
               <h3>Technology Operations &amp; Project Manager</h3>
               <div class="timeline-meta">TRAILS — Remote</div>
               <div class="timeline-dates">January 2024 – Present</div>
-              <p class="timeline-summary">Senior operational leader for enterprise applications and IT service delivery at a fast-scaling national mental health non-profit. Responsible for platform modernization, vendor coordination, data governance, and building the IT infrastructure from the ground up to support a national workforce and 12,000+ partner schools. Full project case studies are in the portfolio.</p>
+              <p class="timeline-summary">Senior operational leader for enterprise applications and IT service delivery at a fast-scaling national mental health non-profit. Led the implementation of Salesforce Nonprofit Cloud as the credential verification and content access engine for TRAILS' national training website — coordinating API integration with the internal web development team to control material access for 30,000+ trained professionals based on their Salesforce training records. Also responsible for platform modernization, hardware lifecycle management, data governance, and building the IT infrastructure to support a national workforce and 12,000+ partner schools.</p>
               <div class="timeline-impact-row">
                 <div class="timeline-impact-chip">50% provisioning reduction</div>
                 <div class="timeline-impact-chip">41K records migrated</div>
@@ -1726,49 +1695,55 @@ footer {
     <p>Whether you're exploring a role, a collaboration, or just want to talk about IT operations and project delivery — I'd love to hear from you.</p>
   </div>
 
-  <div class="contact-body-simple">
+  <div class="contact-body">
+    <div class="contact-info">
+      <h2>Get in touch</h2>
+      <p>I'm currently open to IT Operations Manager, IT Project Manager, and Product Owner / Product Manager opportunities. Based in Colorado Springs, CO — available for remote and hybrid roles.</p>
 
-    <a href="https://www.linkedin.com/in/jevon-butler-2a9544128" target="_blank" rel="noopener" class="linkedin-btn">
-      <span class="linkedin-icon">💼</span>
-      Connect with me on LinkedIn
-    </a>
+      <a href="/cdn-cgi/l/email-protection#ef858a998081dddadbaf88828e8683c18c8082" class="contact-link-card">
+        <div class="contact-link-icon clay">✉️</div>
+        <div class="contact-link-text">
+          <div class="label">Email</div>
+          <div class="value"><span class="__cf_email__" data-cfemail="7f151a0910114d4a4b3f18121e1613511c1012">[email&#160;protected]</span></div>
+        </div>
+      </a>
+      <a href="tel:2544622939" class="contact-link-card">
+        <div class="contact-link-icon navy">📞</div>
+        <div class="contact-link-text">
+          <div class="label">Phone</div>
+          <div class="value">(254) 462-2939</div>
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/in/jevon-butler-2a9544128" target="_blank" class="contact-link-card">
+        <div class="contact-link-icon navy">💼</div>
+        <div class="contact-link-text">
+          <div class="label">LinkedIn</div>
+          <div class="value">linkedin.com/in/jevon-butler-2a9544128</div>
+        </div>
+      </a>
+      <p style="font-size:0.8rem; color:var(--muted-light); margin-top:1rem;">Colorado Springs, CO · Available for remote &amp; hybrid roles</p>
+    </div>
 
     <div class="contact-form-card">
       <h2>Send a message</h2>
       <p>Fill out the form and I'll get back to you within 24 hours.</p>
-      <form id="contact-form" action="https://formspree.io/f/xjgpwzqq" method="POST">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="cf-first">First name</label>
-            <input type="text" id="cf-first" name="first_name" placeholder="John" required>
-          </div>
-          <div class="form-group">
-            <label for="cf-last">Last name</label>
-            <input type="text" id="cf-last" name="last_name" placeholder="Smith">
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="cf-email">Email</label>
-          <input type="email" id="cf-email" name="email" placeholder="john@company.com" required>
-        </div>
-        <div class="form-group">
-          <label for="cf-subject">Subject</label>
-          <select id="cf-subject" name="subject">
-            <option>Job opportunity</option>
-            <option>Collaboration</option>
-            <option>General inquiry</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="cf-message">Message</label>
-          <textarea id="cf-message" name="message" placeholder="Tell me a bit about what you're working on..." required></textarea>
-        </div>
-        <button type="submit" class="btn-primary" style="width:100%;" id="cf-submit">Send Message</button>
-        <p class="form-note" id="cf-status"></p>
-        <p class="form-note">I typically respond within one business day.</p>
-      </form>
+      <div class="form-row">
+        <div class="form-group"><label>First name</label><input type="text" placeholder="John"></div>
+        <div class="form-group"><label>Last name</label><input type="text" placeholder="Smith"></div>
+      </div>
+      <div class="form-group"><label>Email</label><input type="email" placeholder="john@company.com"></div>
+      <div class="form-group">
+        <label>Subject</label>
+        <select>
+          <option>Job opportunity</option>
+          <option>Collaboration</option>
+          <option>General inquiry</option>
+        </select>
+      </div>
+      <div class="form-group"><label>Message</label><textarea placeholder="Tell me a bit about what you're working on..."></textarea></div>
+      <button class="btn-primary" style="width:100%;" onclick="submitContactForm()">Send Message</button>
+      <p class="form-note">I typically respond within one business day.</p>
     </div>
-
   </div>
 
 </div>
@@ -1936,71 +1911,78 @@ footer {
 <div class="project-page-wrap">
   <div class="proj-hero">
     <button class="proj-back" onclick="showPage('portfolio'); document.getElementById('nav-portfolio').classList.add('active');">← Back to Portfolio</button>
-    <div class="proj-type">CRM &amp; Data · Platform Implementation</div>
-    <h1>Implementing Salesforce Nonprofit Cloud at TRAILS — From Fragmented Data to a National System of Record</h1>
-    <p class="proj-sub">How I led the end-to-end Salesforce implementation that transformed TRAILS' program operations — migrating 41,354 records, onboarding 120 users, and establishing a unified platform capable of supporting a national network of 12,000+ schools and 30,000+ mental health professionals.</p>
+    <div class="proj-type">CRM &amp; Data · Platform Implementation &amp; Integration</div>
+    <h1>Implementing Salesforce Nonprofit Cloud at TRAILS — The Operational Backbone of a National Training Program</h1>
+    <p class="proj-sub">How I led the Salesforce Nonprofit Cloud implementation at TRAILS — partnering with an external implementation vendor to migrate off Airtable, the organization's inconsistent and fragmented system of record, and build the platform that now houses TRAILS' entire program operation, automates training delivery through Zoom, and controls content access for 30,000+ mental health professionals on the TRAILS website.</p>
     <div class="proj-meta-row">
       <div class="proj-meta-item"><strong>Organization</strong>TRAILS</div>
       <div class="proj-meta-item"><strong>Duration</strong>~8 months (2024)</div>
       <div class="proj-meta-item"><strong>Role</strong>Implementation Lead &amp; Data Migration Owner</div>
-      <div class="proj-meta-item"><strong>Scope</strong>41,354 records · 120 users · 12K+ partner orgs</div>
+      <div class="proj-meta-item"><strong>Scope</strong>41,354 records · 120 staff users · 30K+ external training recipients</div>
     </div>
     <div class="proj-tags">
-      <span class="proj-tag">Salesforce Nonprofit Cloud</span><span class="proj-tag">Salesforce Data Loader</span><span class="proj-tag">ETL / Data Migration</span><span class="proj-tag">Airtable</span><span class="proj-tag">RBAC</span><span class="proj-tag">Data Governance</span><span class="proj-tag">QA &amp; Validation</span>
+      <span class="proj-tag">Salesforce Nonprofit Cloud</span><span class="proj-tag">Salesforce Data Loader</span><span class="proj-tag">API Integration</span><span class="proj-tag">ETL / Data Migration</span><span class="proj-tag">Airtable</span><span class="proj-tag">RBAC</span><span class="proj-tag">Data Governance</span><span class="proj-tag">QA &amp; Validation</span>
     </div>
   </div>
   <div class="proj-body">
     <div class="proj-main">
       <section>
         <h2>The context</h2>
-        <p>TRAILS had grown from a regional pilot into a national mental health program serving thousands of schools across the country. That growth had exposed a structural problem with how the organization managed its operational data. Program delivery, training operations, and stakeholder engagement each ran through their own tools and processes, with Airtable serving as the closest thing to a shared system of record. In practice, data lived in disconnected places, reporting was unreliable, and leadership was making expansion decisions without a clear view of what was happening on the ground.</p>
-        <div class="proj-callout"><p><strong>The scale constraint:</strong> TRAILS was actively expanding during the implementation. The data model and workflows I designed had to accommodate not just current operations, but a program footprint that was growing week over week throughout the project.</p></div>
+        <p>TRAILS had been running its national training program out of Airtable — a tool that worked at smaller scale but couldn't keep pace with the organization's growth. Records were inconsistent and unreliable, there was no way to link program delivery data, training history, and stakeholder information in one place, and leadership had no clear national view of program reach or outcomes. As TRAILS expanded to thousands of schools across the country, the gap between what the organization needed and what Airtable could provide became impossible to work around.</p>
+        <p>The decision was made to move to Salesforce Nonprofit Cloud. I was brought in to lead that project — owning requirements, vendor coordination, testing, data migration, and user adoption — in partnership with an external Salesforce implementation vendor who handled the platform architecture, object configuration, flows, and integrations.</p>
+        <p>The resulting Salesforce environment became far more than a CRM. It houses TRAILS' entire program operation — training management, stakeholder relationships, marketing, and donor tracking — and powers a Zoom integration that automates training delivery. When a training is created in Salesforce with the relevant accounts attached, Zoom meetings are automatically generated and invites sent. When the session ends, Zoom sends attendee data back to Salesforce, and an automated Flow marks participants as trained based on their attendance duration. The TRAILS website then makes API calls to Salesforce to check those training records and serve the content each professional is authorized to access.</p>
+        <div class="proj-callout"><p><strong>Important distinction:</strong> The 30,000+ mental health professionals and school accounts in Salesforce are data records only — they never log into Salesforce. Salesforce is the back-end system of record; the TRAILS website is their only interface. Their records exist in Salesforce to drive training operations, attendance tracking, and content authorization.</p></div>
       </section>
       <section>
         <h2>What we were working with</h2>
+        <p>Airtable had served as TRAILS' primary system of record, but it was never built for the complexity the organization had grown into. The core problems were:</p>
         <ul class="proj-problem-list">
-          <li>Disconnected systems — program data, training records, and stakeholder information lived in separate tools with no reliable linkage</li>
-          <li>Limited reporting visibility — leadership had no reliable way to understand program delivery status or training outcomes at a national level</li>
-          <li>Manual process overhead — routine operations required significant manual coordination across tools, slowing teams down</li>
-          <li>No scalable access controls — the absence of structured data governance created real security and compliance exposure as the organization grew</li>
+          <li>Inconsistent and unreliable data — records were maintained differently across teams with no enforced standards, making it impossible to trust what was in the system</li>
+          <li>No meaningful linkage between program delivery, training history, and stakeholder relationships — everything lived in disconnected tables</li>
+          <li>No national reporting capability — leadership had no reliable view of training reach, completion rates, or program outcomes at scale</li>
+          <li>No way to automate training delivery or credential verification — every step required manual coordination across multiple tools</li>
+          <li>No scalable access controls — as more staff touched program data, the lack of governance created real security exposure</li>
         </ul>
+        <p>The 41,354 records being migrated represented both current and historical data — every person and organization TRAILS had a relationship with, going back through the organization's history. Getting that data clean and accurately mapped before migration was essential, because these records would immediately drive live training delivery and website access once Salesforce went live.</p>
       </section>
       <section>
-        <h2>Key decisions and tradeoffs</h2>
+        <h2>Key decisions and my role</h2>
+        <p>This project was delivered in partnership with an external Salesforce implementation vendor who owned the platform architecture — designing the objects, relationships, flows, and integrations. My role was to lead the project on TRAILS' side: owning requirements, keeping the vendor accountable to them, validating what was being built, executing the data migration, and ensuring the organization was ready to adopt the new system.</p>
         <div class="proj-decision-grid">
-          <div class="proj-decision-card"><h4>Build the data model around business processes, not Salesforce defaults</h4><p>Salesforce Nonprofit Cloud ships with a standard model optimized for donor management. TRAILS' primary use cases were program delivery and training operations. Rather than adapting our processes to fit the standard model, I defined custom object relationships grounded in how TRAILS actually operated.</p></div>
-          <div class="proj-decision-card"><h4>Data migration quality over migration speed</h4><p>Migrating 41,354 records required extensive pre-migration cleaning, deduplication, and validation. I invested heavily in data quality before migration rather than moving data quickly and cleaning post-launch. A Salesforce system loaded with dirty data would have undermined adoption immediately.</p></div>
-          <div class="proj-decision-card"><h4>RBAC as a design constraint, not a post-launch task</h4><p>Access controls were designed into the data model from the beginning rather than added at the end. With sensitive program data and student-adjacent records in scope, the security architecture had to be deliberate. Retrofitting RBAC onto a live system is significantly harder and riskier than building it in from day one.</p></div>
-          <div class="proj-decision-card"><h4>Post-launch stabilization as a planned phase</h4><p>I scoped a dedicated post-launch stabilization period into the project plan — a window for monitoring adoption, resolving workflow friction, and refining configurations based on real-world use. Treating go-live as a transition point rather than the finish line produced a smoother landing and higher long-term adoption.</p></div>
+          <div class="proj-decision-card"><h4>Requirements ownership and vendor management</h4><p>I served as the primary liaison between TRAILS staff and the implementation vendor — gathering requirements from program, training, marketing, and operations teams, translating them into clear direction for the vendor, and holding the vendor accountable to delivering a system that matched how TRAILS actually worked. When configurations drifted from requirements, I identified the gaps and drove corrections before they reached testing.</p></div>
+          <div class="proj-decision-card"><h4>Data migration: export, field mapping, and import</h4><p>I owned the full data migration process. I exported all current and historical records from Airtable, mapped each field to its corresponding Salesforce object and field in the new data model, cleaned and transformed the data to resolve the inconsistencies that had built up in Airtable, and executed the import using Salesforce Data Loader in staged batches with validation checks between each load. Accurate migration was critical because these records would immediately drive live training delivery and website access.</p></div>
+          <div class="proj-decision-card"><h4>Permission sets for internal staff</h4><p>Once the vendor established the objects and relationships in Salesforce, I built the permission sets for TRAILS' 120 internal staff users — scoping access appropriately for program coordinators, trainers, materials designers, analysts, and IT based on each team's data responsibilities.</p></div>
+          <div class="proj-decision-card"><h4>End-to-end testing across the full training workflow</h4><p>I led testing across every part of the system — Salesforce record creation and relationships, the Zoom integration that auto-generates meetings and sends invites, the Flow automation that processes attendance data and marks participants as trained, and the website API calls that verify training records and grant content access. Testing had to cover edge cases including partial session attendance, professionals working across multiple districts, and accounts enrolled in multiple programs simultaneously.</p></div>
         </div>
       </section>
       <section>
         <h2>How it came together</h2>
         <div class="proj-phases">
-          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">1</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Requirements gathering and data modeling</h4><p>Conducted cross-functional requirements sessions with program delivery, training operations, and stakeholder engagement teams. Designed the Salesforce data model — object relationships, fields, and workflows — to reflect actual business operations.</p></div></div>
-          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">2</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Data audit and pre-migration cleaning</h4><p>Audited existing Airtable data for duplicates, inconsistencies, and structural mismatches with the target Salesforce model. Cleaned and transformed records to meet migration quality standards before any data was moved.</p></div></div>
-          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">3</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>ETL migration via Salesforce Data Loader</h4><p>Executed the migration of 41,354 records in staged batches with validation checks between each load. Confirmed record integrity, relationship linkages, and field mapping accuracy before proceeding to subsequent stages.</p></div></div>
-          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">4</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>RBAC design and implementation</h4><p>Designed and implemented role-based access controls aligned to organizational hierarchy and data sensitivity levels. Ensured staff access was appropriately scoped by role across program data, partner information, and reporting.</p></div></div>
-          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">5</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>QA validation across user scenarios</h4><p>Conducted comprehensive QA cycles covering standard user workflows for each team, cross-functional data flows, and edge cases including bulk operations and reporting accuracy.</p></div></div>
-          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">6</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Go-live, onboarding, and stabilization</h4><p>Managed the go-live transition for 120 internal users. Supported onboarding through training and documentation. Maintained a stabilization period post-launch to monitor adoption and address workflow friction.</p></div></div>
+          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">1</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Requirements gathering across all teams</h4><p>Conducted cross-functional sessions with program delivery, training operations, marketing, and the internal web development team to capture requirements. Translated those requirements into clear direction for the implementation vendor and maintained them as the benchmark against which all vendor deliverables were evaluated.</p></div></div>
+          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">2</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Vendor coordination and architecture review</h4><p>Worked closely with the implementation vendor through the design of Salesforce objects, relationships, flows, and integrations — providing feedback, raising misalignments with requirements, and ensuring the environment being built reflected how TRAILS actually operated rather than a generic Salesforce template.</p></div></div>
+          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">3</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Data export, field mapping, and migration</h4><p>Exported all current and historical records from Airtable — 41,354 in total. Mapped each Airtable field to its corresponding Salesforce field in the new data model. Cleaned and resolved the data inconsistencies that had accumulated in Airtable, then executed the import via Salesforce Data Loader in staged batches with validation checks between each load to confirm record integrity and relationship accuracy.</p></div></div>
+          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">4</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Permission sets for internal staff</h4><p>Built permission sets for all 120 internal staff users once the vendor had established the object and relationship structure — scoping access by role across program coordinators, trainers, materials designers, analysts, and IT.</p></div></div>
+          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">5</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>End-to-end testing</h4><p>Led testing across the full system — Salesforce record creation and relationships, the Zoom integration, the Flow automation that processes attendance and marks participants as trained, and the website API behavior that grants content access based on Salesforce training records. Covered edge cases including partial attendance, multi-program enrollments, and accounts spanning multiple school districts.</p></div></div>
+          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">6</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Go-live, onboarding, and stabilization</h4><p>Managed the go-live transition for 120 internal staff users. Supported onboarding through training and documentation. Maintained a stabilization period post-launch to monitor adoption, address workflow friction, and validate that the live system was performing as tested.</p></div></div>
         </div>
-        <div class="proj-callout-navy"><p>The hardest part of this implementation wasn't technical — it was managing the workflow changes for staff who had built daily habits around Airtable. Solving that required ensuring the new system immediately felt more helpful than the old one, not just more complex. That demanded careful onboarding quality and rapid response to post-launch friction.</p></div>
+        <div class="proj-callout-navy"><p>The biggest challenge of this project wasn't any single technical piece — it was maintaining clarity on what was being built and why across a vendor relationship, internal stakeholders with different needs, and a data migration that had to be accurate because it would immediately power live operations. Keeping requirements sharp, testing thoroughly, and communicating clearly across all of those parties was what made the project land successfully.</p></div>
       </section>
       <section>
         <h2>Outcomes and impact</h2>
+        <p>The implementation delivered a system that was meaningfully more complex than a standard CRM rollout — Salesforce now serves as the live operational backbone of TRAILS' national training program.</p>
         <div class="proj-metrics">
-          <div class="proj-metric hi"><span class="proj-metric-num">41,354</span><span class="proj-metric-lbl">Records successfully migrated with validated data integrity</span></div>
+          <div class="proj-metric hi"><span class="proj-metric-num">41,354</span><span class="proj-metric-lbl">Records migrated with validated integrity, each tied to real access permissions</span></div>
           <div class="proj-metric hi"><span class="proj-metric-num">35%</span><span class="proj-metric-lbl">Improvement in data accuracy and consistency across program records</span></div>
-          <div class="proj-metric"><span class="proj-metric-num">120</span><span class="proj-metric-lbl">Internal users onboarded to the new platform at go-live</span></div>
-          <div class="proj-metric"><span class="proj-metric-num">12K+</span><span class="proj-metric-lbl">Partner schools now managed through a single unified system of record</span></div>
+          <div class="proj-metric"><span class="proj-metric-num">30K+</span><span class="proj-metric-lbl">Mental health professionals whose training credentials and content access are now managed through Salesforce</span></div>
+          <div class="proj-metric"><span class="proj-metric-num">120</span><span class="proj-metric-lbl">Internal staff users across program, training, operations, and IT onboarded at go-live</span></div>
         </div>
-        <p style="margin-top:1.25rem;">For the first time, TRAILS' executive team had reliable, real-time reporting on program delivery, training completion, and stakeholder engagement at a national scale — directly informing expansion decisions in a way that fragmented Airtable data never could.</p>
+        <p style="margin-top:1.25rem;">Beyond the numbers, the most significant outcome is structural: TRAILS now has a single source of truth that simultaneously powers internal operations and controls what tens of thousands of trained professionals can access on the website. Leadership has reliable national reporting on training delivery and program reach for the first time, and the system is architected to scale with the organization's continued growth.</p>
       </section>
     </div>
     <aside class="proj-sidebar">
-      <div class="proj-sidebar-card"><h3>Competencies demonstrated</h3><ul class="proj-sidebar-list"><li>CRM implementation ownership</li><li>Data modeling and object design</li><li>ETL data migration (41K+ records)</li><li>RBAC and data governance design</li><li>Cross-functional requirements gathering</li><li>QA and validation strategy</li><li>Change management and user adoption</li><li>Post-launch stabilization</li></ul></div>
-      <div class="proj-sidebar-card"><h3>Business outcomes</h3><ul class="proj-outcome-list"><li>41,354 records migrated with validated integrity</li><li>35% improvement in data accuracy</li><li>Single system of record for a national program network</li><li>Real-time leadership reporting enabled for the first time</li><li>Scalable RBAC and governance framework established</li></ul></div>
-      <div class="proj-sidebar-card"><h3>Technologies used</h3><ul class="proj-sidebar-list"><li>Salesforce Nonprofit Cloud</li><li>Salesforce Data Loader</li><li>Airtable (source system)</li><li>ETL data transformation</li><li>RBAC / permission sets</li></ul></div>
+      <div class="proj-sidebar-card"><h3>My role in this project</h3><ul class="proj-sidebar-list"><li>Project lead and vendor liaison</li><li>Requirements gathering and management</li><li>Data export, field mapping, and migration</li><li>Salesforce Data Loader import execution</li><li>Permission sets design and build</li><li>End-to-end testing and QA</li><li>Staff onboarding and change management</li><li>Post-launch stabilization</li></ul></div>
+      <div class="proj-sidebar-card"><h3>Business outcomes</h3><ul class="proj-outcome-list"><li>Replaced Airtable as system of record with a platform built for national scale</li><li>41,354 current and historical records migrated with validated integrity</li><li>35% improvement in data accuracy</li><li>Automated training delivery and attendance tracking via Zoom integration and Flow</li><li>30K+ professionals with credential-driven website content access</li><li>Real-time national reporting enabled for leadership</li></ul></div>
+      <div class="proj-sidebar-card"><h3>Technologies used</h3><ul class="proj-sidebar-list"><li>Salesforce Nonprofit Cloud</li><li>Salesforce Data Loader</li><li>Salesforce Flow (automation)</li><li>Zoom API integration</li><li>REST API (website integration)</li><li>Airtable (source system)</li><li>Salesforce permission sets</li></ul></div>
     </aside>
   </div>
 </div>
@@ -2274,39 +2256,20 @@ function filterProjects(cat, btn) {
   });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-  var form = document.getElementById('contact-form');
-  if (!form) return;
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    var btn = document.getElementById('cf-submit');
-    var status = document.getElementById('cf-status');
-    btn.disabled = true;
-    btn.textContent = 'Sending...';
-    fetch('https://formspree.io/f/xjgpwzqq', {
-      method: 'POST',
-      body: new FormData(form),
-      headers: { 'Accept': 'application/json' }
-    }).then(function(r) {
-      if (r.ok) {
-        status.style.color = 'var(--green)';
-        status.textContent = 'Message sent! I\'ll be in touch within 24 hours.';
-        form.reset();
-        btn.textContent = 'Message Sent';
-      } else {
-        status.style.color = '#E24B4A';
-        status.textContent = 'Something went wrong. Please try emailing directly.';
-        btn.disabled = false;
-        btn.textContent = 'Send Message';
-      }
-    }).catch(function() {
-      status.style.color = '#E24B4A';
-      status.textContent = 'Something went wrong. Please try emailing directly.';
-      btn.disabled = false;
-      btn.textContent = 'Send Message';
-    });
-  });
-});
+function submitContactForm() {
+  var first = document.querySelector('.contact-form-card input[placeholder="John"]');
+  var last = document.querySelector('.contact-form-card input[placeholder="Smith"]');
+  var email = document.querySelector('.contact-form-card input[type="email"]');
+  var subject = document.querySelector('.contact-form-card select');
+  var message = document.querySelector('.contact-form-card textarea');
+  if (!first || !first.value.trim() || !email || !email.value.trim() || !message || !message.value.trim()) {
+    alert('Please fill in your name, email, and message.');
+    return;
+  }
+  var body = encodeURIComponent('From: ' + first.value.trim() + ' ' + (last ? last.value.trim() : '') + '\nEmail: ' + email.value.trim() + '\n\n' + message.value.trim());
+  var sub = encodeURIComponent('[Portfolio Contact] ' + (subject ? subject.value : 'General inquiry'));
+  window.location.href = 'mailto:jevon254@gmail.com?subject=' + sub + '&body=' + body;
+}
 </script>
 </body>
 </html>
