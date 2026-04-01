@@ -1401,7 +1401,7 @@ footer {
           <div class="project-card-title">Building TRAILS' First Hardware Lifecycle Program</div>
           <p class="project-card-desc">Designed and implemented an end-to-end device management framework — replacing fragmented manual processes with a secure, repeatable system that cut provisioning effort in half.</p>
           <div class="project-card-tags">
-            <span class="project-card-tag">MDM / JAMF</span>
+            <span class="project-card-tag">MDM / Addigy &amp; Intune</span>
             <span class="project-card-tag">Entra ID</span>
             <span class="project-card-tag">Apple Business Manager</span>
             <span class="project-card-tag">Asset Management</span>
@@ -1763,7 +1763,7 @@ footer {
       <div class="proj-meta-item"><strong>Scope</strong>30,000+ users · 12,000+ partner orgs</div>
     </div>
     <div class="proj-tags">
-      <span class="proj-tag">MDM / JAMF</span><span class="proj-tag">Entra ID</span><span class="proj-tag">Apple Business Manager</span><span class="proj-tag">Google Workspace</span><span class="proj-tag">macOS &amp; Windows</span><span class="proj-tag">Asset Management</span><span class="proj-tag">RBAC</span><span class="proj-tag">Vendor Coordination</span>
+      <span class="proj-tag">Addigy (macOS MDM)</span><span class="proj-tag">Microsoft Intune</span><span class="proj-tag">Apple Business Manager</span><span class="proj-tag">Entra ID</span><span class="proj-tag">Google Workspace</span><span class="proj-tag">macOS &amp; Windows</span><span class="proj-tag">Asset Management</span><span class="proj-tag">Vendor Partnership</span>
     </div>
   </div>
   <div class="proj-body">
@@ -1790,8 +1790,8 @@ footer {
         <h2>Key decisions and tradeoffs</h2>
         <p>This wasn't a case of applying a standard playbook. TRAILS was an early-stage non-profit with lean resources, a distributed workforce, and no existing IT infrastructure to build on. Every design decision had to balance security rigor against operational simplicity.</p>
         <div class="proj-decision-grid">
-          <div class="proj-decision-card"><h4>MDM-first provisioning over manual configuration</h4><p>Rather than documenting a manual setup checklist, I prioritized implementing MDM (JAMF for macOS, Intune via Entra ID for Windows) so that device configuration, security policy enforcement, and software deployment happened automatically at enrollment. The upfront implementation cost was higher, but it eliminated human error from every future provisioning event and made the program scalable without adding headcount.</p></div>
-          <div class="proj-decision-card"><h4>Integrating with Apple Business Manager early</h4><p>TRAILS was primarily a macOS environment. Connecting procurement through Apple Business Manager meant new devices could be automatically enrolled in MDM out of the box — no physical access required. This decision directly enabled remote onboarding at scale, which was non-negotiable for a distributed workforce.</p></div>
+          <div class="proj-decision-card"><h4>MDM-first provisioning over manual configuration</h4><p>Rather than documenting a manual setup checklist, I partnered with an MDM vendor to implement Addigy for macOS and Microsoft Intune for Windows — so device configuration, security policy enforcement, and software deployment happened automatically at enrollment. The upfront vendor partnership cost was higher, but it eliminated human error from every future provisioning event and made the program scalable without adding headcount.</p></div>
+          <div class="proj-decision-card"><h4>Setting up Apple Business Manager directly</h4><p>I set up Apple Business Manager myself, connecting procurement so that new macOS devices could be automatically enrolled in Addigy out of the box with no physical access required. This directly enabled zero-touch remote onboarding at scale — non-negotiable for a distributed workforce spread across the country.</p></div>
           <div class="proj-decision-card"><h4>Sequencing: security controls before full lifecycle scope</h4><p>I made the deliberate choice to tackle offboarding and access revocation workflows first, before completing the full procurement-to-reissuance cycle. The security exposure from weak offboarding was the highest-urgency risk. Getting that right before optimizing the rest of the lifecycle was the right call for a scaling non-profit handling sensitive data.</p></div>
           <div class="proj-decision-card"><h4>Aligning with HR rather than working around them</h4><p>Rather than building a parallel IT-owned process, I partnered with HR to embed device workflows directly into their onboarding and offboarding checklists. This created shared accountability, improved follow-through on device returns, and reduced the coordination overhead that had previously caused delays and missed steps.</p></div>
         </div>
@@ -1801,7 +1801,7 @@ footer {
         <div class="proj-phases">
           <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">1</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Assessment and gap mapping</h4><p>Audited existing device inventory, interviewed stakeholders across HR, operations, and leadership, and documented the full scope of risk and operational gaps before designing anything.</p></div></div>
           <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">2</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Offboarding and security workflows (priority 1)</h4><p>Designed and implemented secure device recovery, data wiping, and access revocation processes integrated with Entra ID and Google Workspace. Partnered with HR to embed these steps into the formal offboarding checklist.</p></div></div>
-          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">3</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>MDM deployment and provisioning automation</h4><p>Implemented JAMF for macOS and Intune for Windows. Configured enrollment profiles, baseline security policies, and automated software deployment. Connected Apple Business Manager for zero-touch macOS provisioning.</p></div></div>
+          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">3</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>MDM deployment and provisioning automation</h4><p>Partnered with an MDM vendor to implement Addigy for macOS and Microsoft Intune for Windows. Set up Apple Business Manager directly, connecting it to Addigy so new devices enrolled automatically at first boot. Configured enrollment profiles, baseline security policies, and automated software deployment across both platforms.</p></div></div>
           <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">4</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Asset tracking and inventory standards</h4><p>Established a centralized asset register with ownership records, lifecycle status, and assignment history. Defined standards for intake, tagging, and record-keeping that any team member could maintain consistently.</p></div></div>
           <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">5</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Documentation and handoff</h4><p>Produced SOPs, onboarding/offboarding runbooks, and vendor coordination guidelines to ensure the program would run consistently without depending on any single individual.</p></div></div>
         </div>
@@ -1820,7 +1820,7 @@ footer {
       </section>
     </div>
     <aside class="proj-sidebar">
-      <div class="proj-sidebar-card"><h3>Competencies demonstrated</h3><ul class="proj-sidebar-list"><li>Program design from zero</li><li>Security risk assessment</li><li>Cross-functional stakeholder alignment</li><li>Vendor and procurement coordination</li><li>MDM implementation (JAMF / Intune)</li><li>Process automation</li><li>Documentation and knowledge transfer</li><li>Prioritization under resource constraints</li></ul></div>
+      <div class="proj-sidebar-card"><h3>Competencies demonstrated</h3><ul class="proj-sidebar-list"><li>Program design from zero</li><li>Security risk assessment</li><li>Cross-functional stakeholder alignment</li><li>Vendor and procurement coordination</li><li>MDM implementation (Addigy / Intune)</li><li>Process automation</li><li>Documentation and knowledge transfer</li><li>Prioritization under resource constraints</li></ul></div>
       <div class="proj-sidebar-card"><h3>Business outcomes</h3><ul class="proj-outcome-list"><li>Eliminated security exposure from uncontrolled device offboarding</li><li>Cut provisioning time by 50% through MDM automation</li><li>Enabled leadership to plan procurement from reliable inventory data</li><li>Built a program designed to run without depending on one person</li><li>Aligned IT and HR workflows to create shared accountability</li></ul></div>
       <div class="proj-sidebar-card"><h3>Technologies used</h3><ul class="proj-sidebar-list"><li>JAMF (macOS MDM)</li><li>Microsoft Intune</li><li>Entra ID (Azure AD)</li><li>Apple Business Manager</li><li>Google Workspace Admin</li><li>Windows Autopilot</li></ul></div>
     </aside>
@@ -1835,15 +1835,15 @@ footer {
     <button class="proj-back" onclick="showPage('portfolio'); document.getElementById('nav-portfolio').classList.add('active');">← Back to Portfolio</button>
     <div class="proj-type">Enterprise Applications · Platform Migration</div>
     <h1>Migrating USADA from DCO Mobile to MODOC for Global Anti-Doping Operations</h1>
-    <p class="proj-sub">How I led the end-to-end platform transition from a proprietary testing application to a globally standardized system — integrating with WADA's international data infrastructure while keeping live athlete testing operations running without interruption.</p>
+    <p class="proj-sub">How I designed and executed the migration from USADA's custom-built DCO Mobile to MODOC — building the ADAMS integration, architecting the AWS-based lab data routing infrastructure, designing the phased regional rollout strategy, and validating the system live at the World Athletics Championships in Eugene, Oregon in July 2022.</p>
     <div class="proj-meta-row">
       <div class="proj-meta-item"><strong>Organization</strong>USADA</div>
       <div class="proj-meta-item"><strong>Duration</strong>~12 months (2022–2023)</div>
-      <div class="proj-meta-item"><strong>Role</strong>Project Lead &amp; Integration Owner</div>
+      <div class="proj-meta-item"><strong>Role</strong>Project Lead · Integration Owner · Rollout Architect</div>
       <div class="proj-meta-item"><strong>Scope</strong>40,000+ athletes · 45+ governing bodies</div>
     </div>
     <div class="proj-tags">
-      <span class="proj-tag">MODOC</span><span class="proj-tag">ADAMS (WADA)</span><span class="proj-tag">SIMON</span><span class="proj-tag">PostgreSQL</span><span class="proj-tag">SFTP Pipelines</span><span class="proj-tag">Zendesk</span><span class="proj-tag">UAT</span><span class="proj-tag">Vendor Management</span>
+      <span class="proj-tag">MODOC</span><span class="proj-tag">ADAMS (WADA)</span><span class="proj-tag">AWS S3</span><span class="proj-tag">SFTP Pipelines</span><span class="proj-tag">SIMON</span><span class="proj-tag">PostgreSQL</span><span class="proj-tag">Zendesk</span><span class="proj-tag">Azure DevOps</span>
     </div>
   </div>
   <div class="proj-body">
@@ -1866,25 +1866,25 @@ footer {
         </ul>
       </section>
       <section>
-        <h2>Key decisions and tradeoffs</h2>
+        <h2>What I owned on this project</h2>
         <div class="proj-decision-grid">
-          <div class="proj-decision-card"><h4>Phased regional rollout over a single cutover</h4><p>A simultaneous switch across all field teams would have introduced unacceptable risk. I designed a phased rollout by region, starting with lower-volume testing areas before moving to high-activity programs. This allowed us to identify and resolve integration issues in a controlled environment before they could affect major competition testing cycles.</p></div>
-          <div class="proj-decision-card"><h4>Parallel systems during transition, not a hard cutover</h4><p>Rather than decommissioning DCO Mobile at migration start, I maintained both systems in parallel during the rollout window. This preserved a fallback for active testing workflows and allowed us to validate MODOC data output against known DCO Mobile records before fully committing.</p></div>
-          <div class="proj-decision-card"><h4>Structured UAT over informal testing</h4><p>I ran formal UAT cycles designed around real-world testing scenarios and edge cases — including ADAMS sync behavior under data conflicts, SFTP pipeline failures, and concurrent multi-region submissions. The investment surfaced several integration issues that would have been significantly more disruptive to resolve post-launch.</p></div>
-          <div class="proj-decision-card"><h4>Field enablement before go-live, not after</h4><p>Doping Control Officers are often working in the field with limited connectivity and no time to troubleshoot software during a test. I prioritized training, documentation, and hands-on readiness sessions before each regional go-live rather than providing support reactively.</p></div>
+          <div class="proj-decision-card"><h4>ADAMS integration — configured and activated</h4><p>ADAMS has a built-in integration tool designed to connect directly to a MODOC instance. I configured this connection — providing USADA's MODOC instance information into the ADAMS integration tool and activating the direct data exchange between the two systems. This eliminated the manual reconciliation that had been required with DCO Mobile and brought USADA into alignment with the global anti-doping data standard.</p></div>
+          <div class="proj-decision-card"><h4>AWS S3 lab routing infrastructure — designed and built</h4><p>For lab data transmission, I connected MODOC to AWS S3 and built the routing architecture: a dedicated S3 bucket for each laboratory USADA works with. When a DCO selects a lab in the field, the sample data transmits through AWS to that lab's specific bucket. A script then copies the JSON file to USADA's historical records and transmits the file directly to the lab's system. This eliminated manual routing decisions and created an auditable, lab-specific data trail for every sample.</p></div>
+          <div class="proj-decision-card"><h4>Phased regional rollout — designed and executed</h4><p>I designed the phased rollout strategy, sequencing regions by testing volume and operational risk. Rather than switching all field teams simultaneously, I brought lower-volume regions online first, resolved any issues in that controlled environment, then moved to higher-activity programs. During the transition, both MODOC and DCO Mobile ran in parallel in the field — DCOs in migrated regions used MODOC while others continued on DCO Mobile, with no gap in testing operations.</p></div>
+          <div class="proj-decision-card"><h4>Live validation at the World Athletics Championships</h4><p>The most rigorous test of the migration happened in the field. I took MODOC live at the World Athletics Championships in Eugene, Oregon in July 2022 — the premier global track and field event. Testing in that environment, with international athletes, global governing body oversight, and legally binding chain-of-custody requirements, validated that the platform and all its integrations could perform under the highest-stakes conditions in the sport.</p></div>
         </div>
       </section>
       <section>
         <h2>How it came together</h2>
         <div class="proj-phases">
-          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">1</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Requirements gathering and vendor alignment</h4><p>Led detailed requirements sessions with the MODOC vendor to define USADA-specific configurations. Translated existing DCO Mobile workflows and internal system dependencies into formal integration requirements.</p></div></div>
-          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">2</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Integration design across four systems</h4><p>Coordinated integration work across SIMON, PostgreSQL, SFTP pipelines (laboratory data exchange), and ADAMS. Served as the operational bridge between the vendor's engineering team and USADA's internal systems.</p></div></div>
-          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">3</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Structured UAT across testing scenarios</h4><p>Designed and executed UAT cycles covering standard workflows, edge cases, and integration failure scenarios. Validated ADAMS sync behavior, chain-of-custody documentation, and multi-region concurrent operations.</p></div></div>
-          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">4</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Phased regional rollout with parallel systems</h4><p>Executed go-lives by region in sequenced waves, maintaining DCO Mobile in parallel during each transition window. Used learnings from early regions to refine training materials ahead of higher-volume rollouts.</p></div></div>
-          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">5</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Field training and DCO enablement</h4><p>Delivered hands-on training sessions and operational debriefs for DCOs across regions. Developed SOPs and quick-reference guides tailored to field conditions.</p></div></div>
-          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">6</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>DCO Mobile decommissioning and post-launch support</h4><p>Managed the structured sunset of DCO Mobile once all regions had transitioned. Established Zendesk-based support workflows to track and resolve post-launch issues through the stabilization period.</p></div></div>
+          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">1</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>ADAMS integration — configured and activated</h4><p>Configured USADA's MODOC instance in the ADAMS built-in integration tool, establishing direct data exchange between MODOC and WADA's global anti-doping management system. Validated sync behavior across testing scenarios before any field deployment.</p></div></div>
+          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">2</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>AWS S3 lab routing infrastructure — designed and built</h4><p>Connected MODOC to AWS S3 and created a dedicated bucket for each laboratory. When a DCO selects a lab in the field, sample data routes automatically to that lab's bucket. Built the script that copies JSON files to historical records and transmits data directly to lab systems.</p></div></div>
+          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">3</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Phased regional rollout — designed and executed</h4><p>Designed the rollout sequence, starting with lower-volume regions and progressively moving to higher-activity programs. Both MODOC and DCO Mobile ran simultaneously in the field during the transition — no testing operations were disrupted at any point across any region.</p></div></div>
+          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">4</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>UAT and integration validation</h4><p>Led UAT cycles covering ADAMS sync behavior, AWS routing accuracy across all labs, and concurrent multi-region submission scenarios. Validated the full end-to-end data flow from DCO field collection through lab delivery and ADAMS recording.</p></div></div>
+          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">5</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Live validation — World Athletics Championships, July 2022</h4><p>Took MODOC live at the World Athletics Championships in Eugene, Oregon — July 15–24, 2022. The premier global track and field event provided the highest-stakes validation environment possible: international athletes, global governing body oversight, and legally binding chain-of-custody requirements on every test conducted.</p></div></div>
+          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">6</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>DCO Mobile decommissioning and post-launch support</h4><p>Managed the structured sunset of DCO Mobile once all regions had fully migrated to MODOC. Established Zendesk-based support workflows to track and resolve post-launch issues through the stabilization period.</p></div></div>
         </div>
-        <div class="proj-callout-navy"><p>The most complex moment in the project was coordinating the final DCO Mobile decommission during an active international testing period. Timing the sunset required aligning with competition schedules, lab processing windows, and ADAMS submission deadlines across multiple governing bodies simultaneously.</p></div>
+        <div class="proj-callout-navy"><p>Running two applications simultaneously in the field during the transition was the most operationally complex part of this project. DCOs in different regions were on different systems at the same time, all feeding into the same downstream data environment. Keeping that clean, ensuring no testing events were disrupted, and validating the full data pipeline all the way to the labs required precise coordination at every phase.</p></div>
       </section>
       <section>
         <h2>Outcomes and impact</h2>
@@ -1898,9 +1898,9 @@ footer {
       </section>
     </div>
     <aside class="proj-sidebar">
-      <div class="proj-sidebar-card"><h3>Competencies demonstrated</h3><ul class="proj-sidebar-list"><li>Enterprise platform migration</li><li>Systems integration ownership</li><li>Vendor management and requirements translation</li><li>UAT design and execution</li><li>Phased rollout strategy</li><li>Change and risk management</li><li>Field team enablement</li><li>Post-launch support operations</li></ul></div>
-      <div class="proj-sidebar-card"><h3>Business outcomes</h3><ul class="proj-outcome-list"><li>Zero disruption to live athlete testing during full migration</li><li>40% reduction in administrative overhead</li><li>Native ADAMS integration aligning USADA with global standards</li><li>Structured decommission of legacy platform with no data loss</li><li>Zendesk support processes established post-launch</li></ul></div>
-      <div class="proj-sidebar-card"><h3>Technologies used</h3><ul class="proj-sidebar-list"><li>MODOC</li><li>ADAMS (WADA)</li><li>SIMON</li><li>PostgreSQL</li><li>SFTP pipelines</li><li>Zendesk</li><li>Azure DevOps</li></ul></div>
+      <div class="proj-sidebar-card"><h3>My role in this project</h3><ul class="proj-sidebar-list"><li>ADAMS integration configuration</li><li>AWS S3 lab routing infrastructure</li><li>Phased rollout design and execution</li><li>Parallel systems management in the field</li><li>UAT and integration validation</li><li>Live field testing at World Athletics Championships</li><li>DCO Mobile decommissioning</li><li>Post-launch support via Zendesk</li></ul></div>
+      <div class="proj-sidebar-card"><h3>Business outcomes</h3><ul class="proj-outcome-list"><li>Zero disruption to live athlete testing during full migration</li><li>40% reduction in administrative overhead</li><li>Native ADAMS integration aligning USADA with global standards</li><li>Per-lab AWS data routing eliminating manual transmission</li><li>Validated live at the World Athletics Championships</li></ul></div>
+      <div class="proj-sidebar-card"><h3>Technologies used</h3><ul class="proj-sidebar-list"><li>MODOC</li><li>ADAMS (WADA) built-in integration</li><li>AWS S3</li><li>SIMON</li><li>PostgreSQL</li><li>SFTP pipelines</li><li>Zendesk</li><li>Azure DevOps</li></ul></div>
     </aside>
   </div>
 </div>
@@ -1995,11 +1995,11 @@ footer {
     <button class="proj-back" onclick="showPage('portfolio'); document.getElementById('nav-portfolio').classList.add('active');">← Back to Portfolio</button>
     <div class="proj-type">Product Delivery · Web Application</div>
     <h1>Delivering Athlete Connect — A Compliance Platform for 40,000+ Athletes</h1>
-    <p class="proj-sub">How I led the cross-functional delivery of a modern athlete compliance platform that replaced a low-adoption legacy system — improving Whereabouts reporting accuracy by 30% while maintaining full alignment with World Anti-Doping Agency standards.</p>
+    <p class="proj-sub">How I led sprint planning, requirements, and UAT as an embedded member of USADA's internal DevOps team — delivering a modern athlete compliance platform that replaced a low-adoption legacy system and improved Whereabouts reporting accuracy by 30% under strict WADA regulatory standards.</p>
     <div class="proj-meta-row">
       <div class="proj-meta-item"><strong>Organization</strong>USADA</div>
       <div class="proj-meta-item"><strong>Duration</strong>~9 months (2023)</div>
-      <div class="proj-meta-item"><strong>Role</strong>Delivery Lead &amp; UAT Owner</div>
+      <div class="proj-meta-item"><strong>Role</strong>Embedded DevOps · Sprint Lead · Requirements &amp; UAT Owner</div>
       <div class="proj-meta-item"><strong>Scope</strong>40,000+ athletes · 45+ governing bodies</div>
     </div>
     <div class="proj-tags">
@@ -2011,7 +2011,7 @@ footer {
       <section>
         <h2>The context</h2>
         <p>USADA's athlete compliance operations ran on a legacy platform that had aged out of step with the demands placed on it. Whereabouts reporting — the process by which athletes in the Registered Testing Pool must file their daily location availability for no-advance-notice testing — requires precision and consistency. A system that's hard to use produces errors. Errors produce compliance risk. And in anti-doping, compliance risk has real consequences for athletes.</p>
-        <p>Athlete Connect was USADA's answer: a modern, purpose-built web application designed around how athletes actually work. My role was to lead the delivery of that platform across engineering, QA, and compliance teams — from requirements definition through production launch.</p>
+        <p>Athlete Connect was USADA's answer: a modern, purpose-built web application designed around how athletes actually work, built by USADA's internal development team. I was embedded in that team as part of the DevOps function throughout my time at USADA — leading sprint planning, owning requirements, and driving UAT from inside the delivery process rather than managing it from the outside.</p>
         <div class="proj-callout"><p><strong>The regulatory constraint:</strong> Every workflow had to satisfy WADA's technical standards simultaneously with usability goals. Building for athletes and building for regulators weren't optional tradeoffs — both were non-negotiable at the same time.</p></div>
       </section>
       <section>
@@ -2055,7 +2055,7 @@ footer {
       </section>
     </div>
     <aside class="proj-sidebar">
-      <div class="proj-sidebar-card"><h3>Competencies demonstrated</h3><ul class="proj-sidebar-list"><li>Cross-functional delivery leadership</li><li>Regulatory requirements translation</li><li>UAT strategy and execution</li><li>Agile sprint planning</li><li>Systems integration validation</li><li>Usability and compliance balancing</li><li>Legacy system migration</li></ul></div>
+      <div class="proj-sidebar-card"><h3>My role in this project</h3><ul class="proj-sidebar-list"><li>Embedded DevOps team member</li><li>Sprint planning leadership</li><li>Requirements ownership and definition</li><li>Backlog refinement</li><li>UAT strategy and execution</li><li>Stakeholder coordination</li><li>Regulatory requirements translation</li><li>Legacy system migration coordination</li></ul></div>
       <div class="proj-sidebar-card"><h3>Business outcomes</h3><ul class="proj-outcome-list"><li>30% improvement in compliance accuracy</li><li>25% increase in workflow completion rates</li><li>Unified athlete data across 3 systems</li><li>Real-time compliance visibility for operational teams</li><li>Clean retirement of legacy platform</li></ul></div>
       <div class="proj-sidebar-card"><h3>Technologies used</h3><ul class="proj-sidebar-list"><li>Azure DevOps</li><li>SIMON</li><li>PostgreSQL</li><li>Global DRO</li><li>WADA ADAMS integration</li></ul></div>
     </aside>
@@ -2070,53 +2070,53 @@ footer {
     <button class="proj-back" onclick="showPage('portfolio'); document.getElementById('nav-portfolio').classList.add('active');">← Back to Portfolio</button>
     <div class="proj-type">Product Delivery · Mobile Platform</div>
     <h1>Delivering DCO Mobile — Digitizing Field Operations for Anti-Doping Testing</h1>
-    <p class="proj-sub">How I led the delivery of a custom mobile platform that replaced paper-based doping control workflows — eliminating manual data entry errors, accelerating lab coordination, and establishing legally defensible digital records for 40,000+ athletes.</p>
+    <p class="proj-sub">How I led requirements, testing, and field validation for a custom mobile platform that replaced paper-based doping control workflows — including live testing at the U.S. Olympic Team Trials in June 2021, where athletes were competing for spots on the team heading to the Tokyo Olympics.</p>
     <div class="proj-meta-row">
       <div class="proj-meta-item"><strong>Organization</strong>USADA</div>
       <div class="proj-meta-item"><strong>Duration</strong>~12 months (2021)</div>
-      <div class="proj-meta-item"><strong>Role</strong>Delivery Lead &amp; UAT Owner</div>
+      <div class="proj-meta-item"><strong>Role</strong>Requirements Lead, UAT Owner &amp; Field Tester</div>
       <div class="proj-meta-item"><strong>Scope</strong>40,000+ athletes · Field operations nationwide</div>
     </div>
     <div class="proj-tags">
-      <span class="proj-tag">Azure DevOps</span><span class="proj-tag">CI/CD</span><span class="proj-tag">SIMON</span><span class="proj-tag">PostgreSQL</span><span class="proj-tag">SFTP Pipelines</span><span class="proj-tag">UAT</span><span class="proj-tag">Vendor Management</span><span class="proj-tag">Legal Compliance</span>
+      <span class="proj-tag">Azure DevOps</span><span class="proj-tag">Requirements Gathering</span><span class="proj-tag">UAT</span><span class="proj-tag">Field Testing</span><span class="proj-tag">SIMON</span><span class="proj-tag">PostgreSQL</span><span class="proj-tag">Vendor Management</span><span class="proj-tag">Legal Compliance</span>
     </div>
   </div>
   <div class="proj-body">
     <div class="proj-main">
       <section>
         <h2>The context</h2>
-        <p>When a Doping Control Officer conducts an athlete test in the field, every step — from notification to sample collection to chain-of-custody documentation — must be recorded with precision. The data generated is legally significant: it forms the evidentiary basis for anti-doping rule violation proceedings and must be defensible under international arbitration standards.</p>
-        <p>For years, USADA managed this process on paper. Officers completed forms by hand, scanned them, emailed them to headquarters, and then staff re-entered the data into internal systems. As testing operations scaled, this workflow became an operational liability — delays accumulated, transcription errors introduced data integrity risk, and the paper trail was slower and harder to audit than a digital record.</p>
-        <div class="proj-callout"><p><strong>The legal constraint:</strong> DCO Mobile wasn't just a productivity tool — it was producing records that could be scrutinized in international arbitration. Every design decision about data capture, chain-of-custody documentation, and audit trails had to meet the evidentiary standards of the World Anti-Doping Code.</p></div>
+        <p>When a Doping Control Officer conducts an athlete test in the field, every step — from notification to sample collection to chain-of-custody documentation — must be recorded with precision. The data is legally significant: it forms the evidentiary basis for anti-doping rule violation proceedings and must be defensible under international arbitration standards.</p>
+        <p>For years, USADA managed this process on paper. Officers completed forms by hand, scanned them, emailed them to headquarters, and then staff re-entered the data into internal systems. As testing operations scaled, this workflow became an operational liability. USADA partnered with an external software vendor to build DCO Mobile — a custom application purpose-built for doping control field operations. I led the project on USADA's side: owning requirements, coordinating with the vendor, leading all testing, and serving as the field validator who took the application live at actual athlete competitions.</p>
+        <div class="proj-callout"><p><strong>The legal constraint:</strong> DCO Mobile wasn't just a productivity tool — it produced records scrutinizable in international arbitration. Every requirement, every test case, and every acceptance decision had to hold up to the evidentiary standards of the World Anti-Doping Code.</p></div>
       </section>
       <section>
         <h2>What we were working with</h2>
         <ul class="proj-problem-list">
-          <li>Manual data entry at two points — in the field on paper, then again at headquarters during transcription — doubled the opportunity for error</li>
+          <li>Manual data entry at two points — in the field on paper, then again at headquarters during transcription — doubled the opportunity for error at every single test</li>
           <li>Transmission delays — physical forms moved through scan-email-entry workflows that added hours between field collection and lab receipt</li>
           <li>Limited traceability — reconstructing chain of custody for a given sample required piecing together paper records, scanned documents, and email threads</li>
-          <li>No pre-arrival data to labs — laboratories received samples before having any advance data, increasing processing time</li>
+          <li>No pre-arrival data to labs — laboratories received samples before having any advance information, increasing processing time and delays</li>
         </ul>
       </section>
       <section>
-        <h2>Key decisions and tradeoffs</h2>
+        <h2>My role in this project</h2>
         <div class="proj-decision-grid">
-          <div class="proj-decision-card"><h4>Field workflow mapping before system design</h4><p>Before any technical requirements were written, I worked with field teams to map the actual end-to-end testing workflow from officer notification through to sample handoff at the lab. This grounded the system design in operational reality, surfacing field-specific constraints that wouldn't have been obvious from a headquarters perspective.</p></div>
-          <div class="proj-decision-card"><h4>Legal standards as hard acceptance criteria</h4><p>I translated USADA's legal and compliance requirements into explicit UAT acceptance criteria that could not be waived. A feature that improved usability but compromised legal defensibility was not acceptable. This created productive tension with the vendor but produced a more defensible system.</p></div>
-          <div class="proj-decision-card"><h4>CI/CD with controlled release gates</h4><p>I implemented a CI/CD process with deliberate release gates rather than continuous deployment. Each release required confirmed UAT sign-off and integration validation before promotion to production. The small cost in deployment velocity was worth the risk reduction in a legally sensitive system.</p></div>
-          <div class="proj-decision-card"><h4>Pre-arrival lab data as a core feature</h4><p>The ability to transmit testing data to laboratories before the sample physically arrived was scoped as a core delivery requirement, not a phase-two enhancement. Building it in from the start meant labs could begin preparation workflows in parallel with sample transit — a meaningful operational gain.</p></div>
+          <div class="proj-decision-card"><h4>Requirements ownership</h4><p>I mapped the end-to-end field testing workflow with Doping Control Officers and translated operational steps, legal constraints, and chain-of-custody requirements into formal specifications for the external vendor. When the vendor's builds drifted from requirements, I identified the gaps and drove corrections before they reached testing.</p></div>
+          <div class="proj-decision-card"><h4>Vendor coordination and sprint management</h4><p>I managed the sprint cycle and backlog in Azure DevOps — coordinating between USADA's internal stakeholders and the vendor's development team. This included backlog prioritization, sprint planning, and release gate decisions. Each release required confirmed UAT sign-off before promotion to production.</p></div>
+          <div class="proj-decision-card"><h4>UAT strategy and execution</h4><p>I designed UAT cycles based on actual DCO field scenarios — standard tests, no-advance-notice events, connectivity loss, and sample exception handling. Every test case was anchored to the legal acceptance criteria I had defined, ensuring that what worked in testing would hold up in the field and in any subsequent arbitration proceedings.</p></div>
+          <div class="proj-decision-card"><h4>Live field testing at competition</h4><p>The most critical validation happened in the field. I took DCO Mobile live at the U.S. Olympic Team Trials in June 2021 — athletes were competing for spots on the U.S. team heading to the Tokyo Olympics. Testing the application in that environment, under real operational conditions with real athletes and real chain-of-custody requirements, validated things that no controlled UAT environment could replicate.</p></div>
         </div>
       </section>
       <section>
         <h2>How it came together</h2>
         <div class="proj-phases">
-          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">1</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Field workflow mapping and requirements definition</h4><p>Mapped the end-to-end testing workflow with DCOs, translating operational steps into system requirements and legal constraints into formal acceptance criteria.</p></div></div>
-          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">2</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Vendor partnership and delivery coordination</h4><p>Served as the primary interface between USADA and the external software vendor. Managed sprint planning, backlog prioritization, and release coordination via Azure DevOps.</p></div></div>
-          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">3</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Integration build and validation</h4><p>Coordinated integration across SIMON, PostgreSQL, and SFTP pipelines for secure lab data transmission. Validated data consistency and lab format compatibility before each sprint sign-off.</p></div></div>
-          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">4</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Structured UAT across real-world field scenarios</h4><p>Designed UAT cycles based on actual DCO field scenarios — standard tests, no-advance-notice events, and edge cases including connectivity loss and sample exceptions. Validated chain-of-custody documentation and audit log completeness against legal criteria.</p></div></div>
+          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">1</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Field workflow mapping and requirements definition</h4><p>Mapped the end-to-end testing workflow with DCOs, translating operational steps and legal constraints into formal requirements for the vendor. Established the acceptance criteria that all testing would be evaluated against.</p></div></div>
+          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">2</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Vendor coordination and sprint management</h4><p>Managed the sprint cycle and backlog via Azure DevOps, coordinating between USADA stakeholders and the external development team. Owned release gate decisions — no build went to production without confirmed UAT sign-off.</p></div></div>
+          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">3</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Structured UAT across field scenarios</h4><p>Designed and executed UAT cycles covering standard tests, no-advance-notice events, connectivity loss, and sample exception handling. Validated chain-of-custody documentation and audit log completeness against legal acceptance criteria.</p></div></div>
+          <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">4</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Live field testing — U.S. Olympic Team Trials, June 2021</h4><p>Took DCO Mobile live at the U.S. Olympic Team Trials in Eugene, Oregon — athletes competing for spots on the Tokyo Olympics team. Validated the application under real operational conditions, with real chain-of-custody requirements, real athletes, and real legal accountability for every record the system produced.</p></div></div>
           <div class="proj-phase"><div class="proj-phase-left"><div class="proj-phase-dot">5</div><div class="proj-phase-line"></div></div><div class="proj-phase-content"><h4>Launch and paper process retirement</h4><p>Coordinated the production launch and retirement of paper-based workflows. Developed training materials and SOPs for DCOs. Monitored post-launch data quality through the stabilization period.</p></div></div>
         </div>
-        <div class="proj-callout-navy"><p>The most complex part wasn't the technology — it was the handoff from paper to digital in a legally charged context. Convincing field teams and compliance stakeholders that a digital record was as defensible as a signed paper form required demonstrating through structured UAT that the digital audit trail was actually more complete and traceable than paper had ever been.</p></div>
+        <div class="proj-callout-navy"><p>The most important validation didn't happen in a testing environment — it happened at the Olympic Trials. Putting the application in the hands of DCOs at one of the highest-stakes events in American athletics, with Olympic selection on the line, confirmed what controlled UAT couldn't: that the system was operationally sound when it mattered most.</p></div>
       </section>
       <section>
         <h2>Outcomes and impact</h2>
@@ -2129,9 +2129,9 @@ footer {
       </section>
     </div>
     <aside class="proj-sidebar">
-      <div class="proj-sidebar-card"><h3>Competencies demonstrated</h3><ul class="proj-sidebar-list"><li>Vendor partnership and delivery ownership</li><li>Field workflow analysis</li><li>Legal compliance as delivery criteria</li><li>CI/CD management with release gates</li><li>UAT for legal defensibility</li><li>Systems integration</li><li>Change management — paper to digital</li></ul></div>
-      <div class="proj-sidebar-card"><h3>Business outcomes</h3><ul class="proj-outcome-list"><li>100% digitization of field testing data</li><li>30% reduction in data entry errors</li><li>20% improvement in testing turnaround time</li><li>Pre-arrival lab data enabling parallel processing</li><li>Legally defensible digital audit trail established</li></ul></div>
-      <div class="proj-sidebar-card"><h3>Technologies used</h3><ul class="proj-sidebar-list"><li>Azure DevOps</li><li>SIMON</li><li>PostgreSQL</li><li>SFTP pipelines</li><li>CI/CD pipeline management</li></ul></div>
+      <div class="proj-sidebar-card"><h3>My role in this project</h3><ul class="proj-sidebar-list"><li>Requirements ownership and definition</li><li>Vendor coordination and sprint management</li><li>UAT strategy and execution</li><li>Live field testing at competition</li><li>Release gate decisions</li><li>DCO training and SOPs</li><li>Post-launch stabilization</li></ul></div>
+      <div class="proj-sidebar-card"><h3>Business outcomes</h3><ul class="proj-outcome-list"><li>100% digitization of field testing data — paper retired</li><li>30% reduction in data entry errors</li><li>20% improvement in testing turnaround time</li><li>Legally defensible digital audit trail established</li><li>Validated live at the U.S. Olympic Team Trials</li></ul></div>
+      <div class="proj-sidebar-card"><h3>Technologies used</h3><ul class="proj-sidebar-list"><li>Azure DevOps</li><li>DCO Mobile (custom application)</li><li>SIMON</li><li>PostgreSQL</li><li>SFTP pipelines</li></ul></div>
     </aside>
   </div>
 </div>
